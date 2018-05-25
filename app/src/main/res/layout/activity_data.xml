@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/searchLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/txtsearchSerial"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:hint="@string/hntSerial"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btnSearch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchLayout2"
+        android:layout_below="@+id/searchLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/txtsearchItemNMBR"
+            android:hint="@string/hntItemNMBR"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:singleLine="true"/>
+
+        <Spinner
+            android:id="@+id/spnsearchStatus"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchLayout3"
+        android:layout_below="@+id/searchLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/txtsearchItemDesc"
+            android:hint="@string/hntItemDesc"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/txtsearchLocation"
+            android:hint="@string/hntLocation"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/searchLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/Listview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

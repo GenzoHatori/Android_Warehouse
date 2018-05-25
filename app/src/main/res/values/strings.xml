@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wh</string>
+    <string name="WareHouse">WareHouse</string>
+    <string name="eMail">E-Mail</string>
+    <string name="Count">Count</string>
+    <string name="hntSerial">SerialNo</string>
+    <string name="hntItemNMBR">ItemNMBR</string>
+    <string name="hntLocation">Location</string>
+    <string name="hntStatus">Status</string>
+    <string name="hntItemDesc">ItemDesc</string>
+
+    <string name="btnSearch">ค้นหา</string>
+</resources>
