@@ -3,6 +3,7 @@
     <string name="WareHouse">WareHouse</string>
     <string name="eMail">E-Mail</string>
     <string name="Count">Count</string>
+    <string name="Type">Type</string>
     <string name="hntSerial">SerialNo</string>
     <string name="hntItemNMBR">ItemNMBR</string>
     <string name="hntLocation">Location</string>

@@ -270,9 +270,13 @@ public class MainActivity extends Activity {
                     sp = getSharedPreferences("Count", Context.MODE_PRIVATE);
                     String count = sp.getString("Count", "");
 
+                    sp = getSharedPreferences("Type", Context.MODE_PRIVATE);
+                    String type = sp.getString("Type", "");
+
                     SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME1);
                     request.addProperty("WareHouse",SiteID);
                     request.addProperty("Count", count);
+                    request.addProperty("Type", type);
 
                     SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
                     envelope.dotNet = true;

@@ -64,22 +64,46 @@
         android:layout_gravity="start"
         android:paddingTop="20dp">
 
+    <TextView
+        android:id="@+id/lblcount"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/Count"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtcount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:hint="@string/Count"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count_layout"
+        android:layout_gravity="start"
+        android:paddingTop="20dp">
+
         <TextView
-            android:id="@+id/lblcount"
+            android:id="@+id/lbltype"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:gravity="center"
-            android:text="@string/Count"
+            android:text="@string/Type"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/txtcount"
-            android:layout_width="match_parent"
+        <Spinner
+            android:id="@+id/spnsearchType"
+            android:layout_width="200dp"
             android:layout_height="50dp"
-            android:text=""
-            android:hint="@string/Count"
-            android:textAlignment="center"
-            android:textSize="20dp" />
-
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
     </LinearLayout>
 </RelativeLayout>
